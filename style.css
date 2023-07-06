@@ -1,0 +1,197 @@
+body{
+   background-color: skyblue;
+   animation: main;
+   animation-iteration-count: 1;
+   animation-duration: 15s;
+   animation-timing-function: linear;
+    
+    
+}
+@keyframes main{
+
+0%{
+    background-color: rgb(124, 211, 246);
+}
+10%{
+    background-color: rgb(80, 184, 225);
+}
+20%{
+    background-color: rgb(19, 169, 228);
+}
+30%{
+    background-color: rgb(237, 237, 39);
+}
+40%{
+    background-color: rgb(244, 217, 16);
+}
+50%{
+    background-color: rgb(255, 162, 0)5, 196, 0;
+}
+60%{
+    background-color: rgb(213, 141, 8);
+}
+70%{
+    background-color: rgb(221, 6, 6);
+}
+80%{
+    background-color: rgb(67, 77, 80);
+}
+
+90%{
+    background-color: rgb(18, 18, 67);
+}
+100%{
+    background-color: rgb(1, 1, 26);
+}
+}
+
+.sun{
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(orange,red);
+    box-shadow: 3px 2px 6px orange;
+    position: absolute;
+    left: 40%;
+    border-radius: 50%;
+    animation: suns;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes suns{
+
+    100%{
+        transform: translatey(750px);
+    }
+}
+.moon{
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: -20px 10px white;
+    left: 0.4in;
+    position: absolute;
+    opacity: 0;
+    animation: moons;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+}
+
+@keyframes moons{
+    100%{
+        opacity: 1;
+    }
+}
+
+.highway{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(highway.jpg);
+    height: 100px;
+    right: 0;
+    width: 1000%;
+    background-repeat: repeat-x;
+    z-index: 5;
+    animation: highways;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    display: block;
+    overflow-x: hidden;
+
+    
+    
+}
+
+
+@keyframes highways{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+
+.city{
+    position: absolute;
+    background-image: url(city.png);
+    bottom: 0;
+    top: 3in;
+    width: 1000%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    height: 5in;
+    background-repeat: repeat-x;
+    animation: city;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    overflow-x: hidden;
+    display: block;
+    
+
+}
+@keyframes city{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+.car{
+    position: absolute;
+   top:6in;
+   left: 2in;
+   z-index: 7;
+}
+
+.car img{
+    width: 350px;
+    height: 150px;
+}
+.back_wheel{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 1px;
+    left: 15%;
+    top: 0.7in;
+    background-size: cover;
+    background-image: url(wheel.png);
+    z-index: 1;
+    animation: back;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes back{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.front_wheel{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    bottom: 1px;
+    left: 65%;
+    top: 47%;
+    background-size: cover;
+    background-image: url(wheel.png);
+    z-index: 1;
+    animation: front;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+
+}
+@keyframes front{
+    100%{
+        transform: rotate(360deg);
+    }
+}
